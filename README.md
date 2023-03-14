@@ -8,7 +8,15 @@ Yet another waybar script for controlling HYPRLAND work-spaces but this time nic
 ```
 git clone https://github.com/IHtDzenda/PrettyWaybarWorkspaces.git
 mkdir ~/.config/waybar/scripts 
-cp ./PrettyWaybarWorkspaces/workspaces.py ~/.config/waybar/scripts && cp ./PrettyWaybarWorkspaces/BarConfig.json  ~/.config/waybar/scripts && cd ~/.config/waybar/
+cp ./PrettyWaybarWorkspaces/workspaces.py ~/.config/waybar/scripts && cp ./PrettyWaybarWorkspaces/looks.json ~/.config/waybar/scripts && ./PrettyWaybarWorkspaces/linkedIcons.json
+~/.config/waybar/scripts && cd ~/.config/waybar/
+```
+#### Installing fonts:
+```
+Arch:
+  yay -S ttf-jetbrains-mono-git	
+Other:
+  https://github.com/JetBrains/JetBrainsMono
 ```
 Add this to the waybar config file(this creates the bar object) 
 ```
