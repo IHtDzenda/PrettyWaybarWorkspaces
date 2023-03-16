@@ -36,6 +36,6 @@ Add dont forget to add it to the bar to!!!
 
 ## Features :
 * ✅ Work
-* ❌ Easy setup
+* ✅  Easy setup
 * ❌ Importing config / configfile
 * ❌ Adding a config script

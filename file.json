@@ -1,0 +1,26 @@
+[
+  {
+    "appName": "Brave",
+    "icon": "\uf268"
+  },
+  {
+    "appName": "Firefox",
+    "icon": "\uf269"
+  },
+  {
+    "appName": "~",
+    "icon": "\uf489"
+  },
+  {
+    "appName": "VSCodium",
+    "icon": "\ue70c"
+  },
+  {
+    "appName": "Discord",
+    "icon": "\uf392"
+  },
+  {
+    "appName": "Spotify",
+    "icon": "\uf1bc"
+  }
+]
