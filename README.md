@@ -7,9 +7,8 @@ Yet another waybar script for controlling HYPRLAND work-spaces but this time nic
 ## Setup:
 ```
 git clone https://github.com/IHtDzenda/PrettyWaybarWorkspaces.git
-mkdir ~/.config/waybar/scripts 
-cp ./PrettyWaybarWorkspaces/workspaces.py ~/.config/waybar/scripts && cp ./PrettyWaybarWorkspaces/looks.json ~/.config/waybar/scripts && ./PrettyWaybarWorkspaces/linkedIcons.json
-~/.config/waybar/scripts && cd ~/.config/waybar/
+cd PrettyWaybarWorkspaces
+python setup.py
 ```
 #### Installing fonts:
 ```
@@ -25,17 +24,20 @@ Add this to the waybar config file(this creates the bar object)
     "interval": 1,        
     "on-scroll-up": "hyprctl dispatch workspace e+1",     
     "on-scroll-down": "hyprctl dispatch workspace e-1",
-    "exec": "python3 ~/.config/waybar/scripts/workspaces.py",
-
+    "exec": "python3 ~/.config/waybar/scripts/workspaces.py -m HDMI-A-1", // replace the "HDMI-A-1" with your monitor get monitors by running yprctl -j monitors
 },
 ```
 Add dont forget to add it to the bar to!!!
 ```
 "modules-left": ["custom/betterbar"],
 ```
+### ⚠️ For multiple monitors 
+I recommend making two waybar config files and adding "output": "HDMI-A-1" to each file and replacing the monitor name in the scrtipt argument 
+
 
 ## Features :
 * ✅ Work
 * ✅  Easy setup
-* ❌ Importing config / configfile
-* ❌ Adding a config script
+* ✅  Support for multi monitors
+* ✅ Importing config / configfile
+* ✅ Adding a config script
