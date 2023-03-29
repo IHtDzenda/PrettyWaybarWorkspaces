@@ -2,5 +2,8 @@
     "prefixStart":"𓉘",
     "prefixEnd":" 𓉝",
     "prefixActiveStart":"﹃",
-    "prefixActiveEnd":" ﹄"
+    "prefixActiveEnd":" ﹄",
+    "number_workspaces":true,
+    "icon_numerals":false
+
 }]
