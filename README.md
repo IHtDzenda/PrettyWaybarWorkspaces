@@ -24,7 +24,7 @@ Add this to the waybar config file(this creates the bar object)
     "interval": 1,        
     "on-scroll-up": "hyprctl dispatch workspace e+1",     
     "on-scroll-down": "hyprctl dispatch workspace e-1",
-    "exec": "python3 ~/.config/waybar/scripts/workspaces.py -m HDMI-A-1", // replace the "HDMI-A-1" with your monitor get monitors by running yprctl -j monitors
+    "exec": "python3 ~/.config/waybar/scripts/workspaces.py -m 0", //with a number of a your monitors for me it staarts at 0 hyprctl -j clients and looking for the "monitors" string
 },
 ```
 Add dont forget to add it to the bar to!!!
@@ -33,11 +33,10 @@ Add dont forget to add it to the bar to!!!
 ```
 ### ⚠️ For multiple monitors 
 I recommend making two waybar config files and adding "output": "HDMI-A-1" to each file and replacing the monitor name in the scrtipt argument 
-
-
+#### hyprctl -j monitors | jq '.[0].name'
 ## Features :
 * ✅ Work
-* ✅  Easy setup
-* ✅  Support for multi monitors
+* ✅ Easy setup
+* ✅ Support for multi monitors
 * ✅ Importing config / configfile
 * ✅ Adding a config script
